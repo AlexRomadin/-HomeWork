@@ -1,12 +1,13 @@
 ﻿int n, current;
 
-Console.Write("Imput number");
+Console.WriteLine("Imput number: ");
 n = Convert.ToInt32(Console.ReadLine());
 
-current = n * (-1);
+current = 1;
 
-while(current <=n);
+while(current <= n);
+    if (current % 2 == 0)
 {
-    Console.Write(current + " ");
+    Console.WriteLine(current);
     current++;
 }
