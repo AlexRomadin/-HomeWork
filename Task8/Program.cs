@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿int n, current;
+
+Console.WriteLine("Input number");
+n = Convert.ToInt32(Console.ReadLine());
+
+current = n % 2 == 0;
+
+while(current <= n);
+{
+    Console.Write(current + " ");
+    current++;
+}
