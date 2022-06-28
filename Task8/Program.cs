@@ -1,13 +1,19 @@
-﻿int n, current;
+﻿int n;
+int i = 1, k = 1;            
 
-Console.WriteLine("Imput number: ");
+Console.WriteLine("Input number");
 n = Convert.ToInt32(Console.ReadLine());
 
-current = 1;
-
-while(current <= n);
-    if (current % 2 == 0)
+while (true)
 {
-    Console.WriteLine(current);
-    current++;
+	if (i % 2 == 0)
+	{
+		Console.Write(i + " ");
+		k++;
+	}
+	if (k > n)
+	{
+		break;
+	}
+	i++;
 }
