@@ -1,6 +1,6 @@
 ﻿int a;
 
-Console.WriteLine("Input number");
+Console.Write("Input number: ");
 a = Convert.ToInt32(Console.ReadLine());
 
 if(a % 2 == 0)
