@@ -8,12 +8,11 @@ b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input 1 number");
 c = Convert.ToInt32(Console.ReadLine());
 
-max=a;
+max = a;
 
-if(b>max) max=b;
-if(c>max) max=c;
+if(b>max) max = b;
+if(c>max) max = c;
 
 {
     Console.WriteLine(max);
 }
-
