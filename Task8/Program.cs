@@ -1,19 +1,15 @@
-﻿int n;
-int i = 1, k = 1;            
+﻿int n, i;            
 
-Console.WriteLine("Input number");
+Console.Write("Input number: ");
 n = Convert.ToInt32(Console.ReadLine());
 
-while (true)
+i = 0;
+
+while (i<=n)
 {
 	if (i % 2 == 0)
 	{
-		Console.Write(i + " ");
-		k++;
+		Console.WriteLine(i + " ");
+		i++;
 	}
-	if (k > n)
-	{
-		break;
-	}
-	i++;
 }
