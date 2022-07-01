@@ -2,7 +2,7 @@
 
 int day = Convert.ToInt32(Console.ReadLine());
 
-void WeekDay (int dayNumber) 
+void WeekDay (int day) 
 {
   if (day == 6 || day == 7) {
   Console.WriteLine("Этот день выходной? -> да");
