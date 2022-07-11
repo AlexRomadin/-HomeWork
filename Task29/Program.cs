@@ -4,7 +4,7 @@
     int i = 0;
     while(i < length)
     {
-        array[i] = new Random().Next(1, 10);
+        array[i] = new Random().Next(1, 20);
         i++;
     }
 }
@@ -15,11 +15,11 @@ void PrintArray(int [] array)
 
     for(int i = 1; i < count; i++)
     {
-        Console.WriteLine($"{array[i]}");
+        Console.Write($"{array[i]}" + " ");
     }
 }
 
-int [] array = new int [10];
+int [] array = new int [20];
 
 FillArray(array);
 PrintArray(array);
