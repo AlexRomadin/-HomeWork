@@ -9,6 +9,7 @@
     }
 }
 
+
 void PrintArray(int [] array)
 {
     int count = array.Length;
@@ -18,7 +19,6 @@ void PrintArray(int [] array)
         Console.Write($"{array[i]}" + " ");
     }
 }
-
 int [] array = new int [20];
 
 FillArray(array);
