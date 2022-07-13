@@ -4,6 +4,8 @@
 
     for(int i = 0; i <  newArray.Length; i++)
         newArray[i] = Convert.ToDouble(new Random().Next(100, 1000)) / 100;
+
+    return newArray;
 }
 
 void ShowArray(double[] array)
