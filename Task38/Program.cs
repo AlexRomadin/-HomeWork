@@ -1,4 +1,4 @@
-﻿double[] CreateRandomArray(double size)
+﻿int[] CreateRandomArray(double size)
 {
     double[] newArray = new double[size];
 
@@ -17,7 +17,7 @@ void ShowArray(double[] array)
 }
 
 Console.Write("Input size of array: ");
-int size = Convert.ToInt32(Console.ReadLine());
+double size = Convert.ToDouble(Console.ReadLine());
 
 double[] array2 = CreateRandomArray(size);
 
