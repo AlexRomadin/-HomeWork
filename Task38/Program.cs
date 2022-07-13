@@ -1,11 +1,20 @@
-﻿int[] CreateRandomArray(double size)
+﻿/*int[] CreateRandomArray(double size)
 {
-    double[] newArray = new double[size];
+    int[] newArray = new int[size];
 
     for(int i = 0; i <  newArray.Length; i++)
-        newArray[i] = Convert.ToDouble(new Random().Next(100, 1000)) / 100;
+        newArray[i] = new Random().Next(100, 1000) / 100;
 
     return newArray;
+}
+*/
+
+void CreateRandomArray(double[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        {
+            array[i] = Convert.ToDouble(new Random().Next(100,1000)) / 100;
+        }
 }
 
 void ShowArray(double[] array)
@@ -17,9 +26,9 @@ void ShowArray(double[] array)
 }
 
 Console.Write("Input size of array: ");
-double size = Convert.ToDouble(Console.ReadLine());
+int size = Convert.ToInt32(Console.ReadLine());
 
-double[] array2 = CreateRandomArray(size);
+double[] array2 = CreateRandomArray(array);
 
 ShowArray(array2);
 

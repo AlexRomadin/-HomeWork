@@ -20,6 +20,7 @@ Console.Write("Input size of array: ");
 int size = Convert.ToInt32(Console.ReadLine());
 
 int[] array1 = CreateRandomArray(size);
+
 ShowArray(array1);
 
 int count = 0;
