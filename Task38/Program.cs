@@ -1,6 +1,6 @@
-﻿int[] CreateRandomArray(double size)
+﻿double[] CreateRandomArray(double size)
 {
-    int[] newArray = new int[size];
+    double[] newArray = new double[size];
 
     for(int i = 0; i <  newArray.Length; i++)
         newArray[i] = Convert.ToDouble(new Random().Next(100, 1000)) / 100;
