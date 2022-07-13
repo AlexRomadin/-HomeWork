@@ -19,24 +19,24 @@ void ShowArray(double[] array)
 Console.Write("Input size of array: ");
 int size = Convert.ToInt32(Console.ReadLine());
 
-double[] array1 = CreateRandomArray(size);
+double[] array2 = CreateRandomArray(size);
 
-ShowArray(array1);
+ShowArray(array2);
 
-double min = Int32.MaxValue;
-double max = Int32.MinValue;
+double min = array2[0];
+double max = array2[0];
 
-for (int i = 0; i < array1.Length; i++)
+for (int i = 0; i < array2.Length; i++)
 {
-    if (array1[i] > max)
+    if (array2[i] > max)
         {
-            max = array1[i];
+            max = array2[i];
         }
-    if (array1[i] < min)
+    if (array2[i] < min)
         {
-            min = array1[i];
+            min = array2[i];
         }
 }
 
-Console.WriteLine($"всего {array1.Length} чисел. Максимальное значение = {max}, минимальное значение = {min}");
+Console.WriteLine($"всего {array2.Length} чисел. Максимальное значение = {max}, минимальное значение = {min}");
 Console.WriteLine($"Разница между максимальным и минимальным значением = {max - min}");
