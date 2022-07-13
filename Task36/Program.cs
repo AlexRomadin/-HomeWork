@@ -24,6 +24,7 @@ Console.Write("Input max value: ");
 int max = Convert.ToInt32(Console.ReadLine());
 
 int[] array1 = CreateRandomArray(size, min, max);
+
 ShowArray(array1);
 
 int sum = 0;
