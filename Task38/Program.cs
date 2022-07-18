@@ -9,7 +9,7 @@ void PrintArray(double[] numbers)
 {
         for(int i = 0; i < numbers.Length; i++)
         {
-            Console.Write(numbers[i] + ",");
+            Console.WriteLine(numbers[i] + " ");
         }
     Console.WriteLine();
 }
