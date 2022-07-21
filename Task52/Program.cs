@@ -32,7 +32,9 @@ int m = Convert.ToInt32(Console.ReadLine());
 int[,] numbers = new int[n, m];
 
 FillArrayRandomNumbers(numbers);
+PrintArray(numbers);
 
+Console.WriteLine();
 
 for (int j = 0; j < numbers.GetLength(1); j++)
 {
@@ -45,6 +47,3 @@ for (int j = 0; j < numbers.GetLength(1); j++)
     
     Console.Write(avarage + "; ");
 }
-Console.WriteLine();
-
-PrintArray(numbers);
